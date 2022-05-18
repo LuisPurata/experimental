@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import com.android.volley.Request
+import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 
 
@@ -46,6 +48,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun validarUsuario(URL: String){
-        var stringRequest: StringRequest = StringRequest()
+        var stringRequest: StringRequest = StringRequest(Request.Method.GET, URL,
+            Response.Listener<String> { response ->
+                // Display the first 500 characters of the response string.
+                //textView.text = "Response is: ${response.substring(0, 500)}"
+            },
+            Response.ErrorListener { //textView.text = "That didn't work!"
+             })
+
+
+
     }
 }
