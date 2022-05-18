@@ -5,7 +5,7 @@ import android.os.Bundle
 
 class MainActivity : AppCompatActivity() {
 
-    var variable = "Hello World, esto ha sufido un cambio"
+
     var asdfs = "Como Estas Mundo Cruel"
     var v1 = 1
     var v2 = 2
