@@ -7,9 +7,7 @@ import android.widget.Button
 class MainActivity : AppCompatActivity() {
 
 
-    var asdfs = "Como Estas Mundo Cruel"
-    var v1 = 1
-    var v2 = 2
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
