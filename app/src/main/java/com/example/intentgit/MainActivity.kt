@@ -19,13 +19,17 @@ class MainActivity : AppCompatActivity() {
         val button2: Button = findViewById(R.id.buton_secundario)
         val text1 : TextView = findViewById(R.id.text1)
         val text2 : TextView = findViewById(R.id.text2)
-
+        button.visibility = View.GONE
         button.setOnClickListener{
-            text1.visibility=View.GONE
+            text1.visibility=View.VISIBLE //Ocultar algun elemento
+            button2.visibility = View.VISIBLE
+            button.visibility = View.GONE
         }
 
         button2.setOnClickListener {
-            text1.visibility = View.VISIBLE
+            text1.visibility = View.GONE //Mostrar algun elemento
+            button.visibility = View.VISIBLE
+            button2.visibility = View.GONE
         }
 
     }

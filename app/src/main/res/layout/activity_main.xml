@@ -29,12 +29,12 @@
         android:id="@+id/boton_principal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="mostrar" />
 
     <Button
         android:id="@+id/buton_secundario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="ocultar" />
 
 </LinearLayout>
