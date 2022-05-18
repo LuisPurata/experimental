@@ -2,6 +2,7 @@ package com.example.intentgit
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var resultado = v1 + v2
+        val button: Button = findViewById(R.id.boton_principal)
 
     }
 }
